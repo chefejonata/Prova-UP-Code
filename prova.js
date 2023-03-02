@@ -2,6 +2,8 @@
 // elemento da linha onde se encontra o maior elemento da matriz. Escreva um algoritmo 
 // que leia uma matriz 10 X 10 de números e encontre seu elemento minimax, mostrando 
 // também sua posição.
+
+// Gerando a matriz
   
 function geraNumeros(x) {
     let lista = [];
@@ -22,7 +24,7 @@ for(let j = 0; j < 10; j++){
 
 console.table(matriz);
 
-// Encontrando o Maior número
+// Encontrando o minimax da matriz
 
 let linha = 0;
 let maior = 0;
@@ -45,6 +47,8 @@ for(let z = 0; z < 10; z++){
         menor = listaLinha[z];
     }
 }
+
+// Resultado no console
 
 console.log("O maior nmero nessa matriz é :", maior);
 console.log("Esta é a linha", linha);
